@@ -1,0 +1,5 @@
+# Ignore compiled executables
+Bottleneck_engine
+format_real_data
+*.csv
+*.txt
