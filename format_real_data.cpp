@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    // 1. Point this to the file you downloaded
+    // 1. Downloaded file
     ifstream infile("stanford_graph.txt"); 
     ofstream outfile("network_data.csv");
 
@@ -37,7 +37,7 @@ int main() {
         if (ss >> u >> v) {
             int capacity = capacity_dist(gen) * 100;
             
-            // Format it exactly how your engine expects it
+            // Format it exactly how the engine expects it
             outfile << "Router_" << u << ",Router_" << v << "," << capacity << "\n";
             edge_count++;
         }
